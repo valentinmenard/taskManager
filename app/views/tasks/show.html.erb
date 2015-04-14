@@ -1,0 +1,7 @@
+<h2>Votre tache est la suivante!</h2>
+
+<%= link_to "retour", tasks_path %>
+
+<h4>Le contenu de la tache: <%= @task.content %></h4>
+<h4>Elle a été créée le : <%= @task.created_at %></h4>
+<h4>Votre tâche est-elle finie? : <%= @task.finished %></h4>

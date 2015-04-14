@@ -1,0 +1,9 @@
+<%= form_for(@task) do |task| %>
+  <%= task.label :content %>
+  <%= task.text_field :content %>
+
+  <%= task.label :finished %>
+  <%= task.select :finished, [["en cours", false], ["terminé", true]] %>
+
+  <%= task.submit %>
+  <%end%>
